@@ -24,30 +24,26 @@ console.log(data.results)
         (<div> loading...</div>
              ): (
             <div>
-             <h1>Single Transaction <Badge color="secondary">Block</Badge></h1>
-             
-                               
-             <Container  className="container">
-             <Row>
-             <Col xs="2">Hash</Col>
-             <Col xs="10">{this.state.Block.hash}</Col>
-             </Row>
-             <Row>
-             <Col xs="2">Version</Col>
-             <Col xs="10">{this.state.Block.ver}</Col>
-             </Row>
-             <Row>
-             <Col xs="2">vin_sz</Col>
-             <Col xs="10">{this.state.Block.vin_sz}</Col>
-             </Row>
-             <Row>
-             <Col xs="2">vout_sz</Col>
-             <Col xs="10">{this.state.Block.vout_sz}</Col>
-             </Row>
-           
-           
-           
-             </Container>
+                <h1>Single Transaction <Badge color="secondary">Block</Badge></h1>
+                                                
+                <Container  className="container">
+                <Row>
+                <Col xs="2">Hash</Col>
+                <Col xs="10">{this.state.Block.hash}</Col>
+                </Row>
+                <Row>
+                <Col xs="2">Version</Col>
+                <Col xs="10">{this.state.Block.ver}</Col>
+                </Row>
+                <Row>
+                <Col xs="2">vin_sz</Col>
+                <Col xs="10">{this.state.Block.vin_sz}</Col>
+                </Row>
+                <Row>
+                <Col xs="2">vout_sz</Col>
+                <Col xs="10">{this.state.Block.vout_sz}</Col>
+                </Row>
+                </Container>
             </div>
         )}
       </div>

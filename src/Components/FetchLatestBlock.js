@@ -24,32 +24,31 @@ console.log(data.results)
         (<div> loading...</div>
              ): (
             <div>
-              <h1>Latest <Badge color="secondary">Block</Badge></h1>
-                <Container  className="container">
-                <Row>
-                <Col xs="2">Hash</Col>
-                <Col xs="10">{this.state.Block.hash}</Col>
-                </Row>
-                <Row>
-                <Col xs="2">time</Col>
-                <Col xs="10">{this.state.Block.time}</Col>
-                </Row>
-                <Row>
-                <Col xs="2">block_index</Col>
-                <Col xs="10">{this.state.Block.block_index}</Col>
-                </Row>
-                <Row>
-                <Col xs="2">height</Col>
-                <Col xs="10">{this.state.Block.height}</Col>
-                </Row>
-                <Row>
-                <Col xs="2">txIndexes</Col>
-                <Col xs="10">{this.state.Block.txIndexes[0]}</Col>
-                </Row>
-              
-              
-              
-                </Container>
+                <h1>Latest <Badge color="secondary">Block</Badge></h1>
+                  <Container  className="container">
+                  <Row>
+                  <Col xs="2">Hash</Col>
+                  <Col xs="10">{this.state.Block.hash}</Col>
+                  </Row>
+                  <Row>
+                  <Col xs="2">time</Col>
+                  <Col xs="10">{this.state.Block.time}</Col>
+                  </Row>
+                  <Row>
+                  <Col xs="2">block_index</Col>
+                  <Col xs="10">{this.state.Block.block_index}</Col>
+                  </Row>
+                  <Row>
+                  <Col xs="2">height</Col>
+                  <Col xs="10">{this.state.Block.height}</Col>
+                  </Row>
+                  <Row>
+                  <Col xs="2">txIndexes</Col>
+                  <Col xs="10">{this.state.Block.txIndexes[0]}</Col>
+                  </Row>
+                      
+                
+                  </Container>
                 </div>
         )}
       </div>
