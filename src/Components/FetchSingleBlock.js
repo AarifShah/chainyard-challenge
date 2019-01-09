@@ -67,6 +67,26 @@ console.log(data.results)
                <Col xs="2">Root</Col>
                <Col xs="10">{this.state.Block.mrkl_root}</Col>
                </Row>
+               <Row>
+               <Col xs="2">time</Col>
+               <Col xs="10">{this.state.Block.time}</Col>
+               </Row>
+               <Row>
+               <Col xs="2">bits</Col>
+               <Col xs="10">{this.state.Block.bits}</Col>
+               </Row>
+               <Row>
+               <Col xs="2">n_tx</Col>
+               <Col xs="10">{this.state.Block.n_tx}</Col>
+               </Row>
+               <Row>
+               <Col xs="2">size</Col>
+               <Col xs="10">{this.state.Block.size}</Col>
+               </Row>
+               <Row>
+               <Col xs="2">block_index</Col>
+               <Col xs="10">{this.state.Block.block_index}</Col>
+               </Row>
              
              
              
