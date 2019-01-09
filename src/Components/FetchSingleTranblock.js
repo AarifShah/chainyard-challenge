@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-
+import { Container, Row, Col } from 'reactstrap';
+import { Badge } from 'reactstrap';
+import '../FetchLatestBlock.css'
  class FetchSingleTranBlock extends Component {
   state ={
 
@@ -22,10 +24,30 @@ console.log(data.results)
         (<div> loading...</div>
              ): (
             <div>
-              <h1>Single Transaction</h1>
-                 <label>inputs[0].prev_out.value</label>
-                <div>{this.state.Block.inputs[0].prev_out.value}</div>
-                
+             <h1>Single Transaction <Badge color="secondary">Block</Badge></h1>
+             
+                               
+             <Container  className="container">
+             <Row>
+             <Col xs="2">Hash</Col>
+             <Col xs="10">{this.state.Block.hash}</Col>
+             </Row>
+             <Row>
+             <Col xs="2">Version</Col>
+             <Col xs="10">{this.state.Block.ver}</Col>
+             </Row>
+             <Row>
+             <Col xs="2">vin_sz</Col>
+             <Col xs="10">{this.state.Block.vin_sz}</Col>
+             </Row>
+             <Row>
+             <Col xs="2">vout_sz</Col>
+             <Col xs="10">{this.state.Block.vout_sz}</Col>
+             </Row>
+           
+           
+           
+             </Container>
             </div>
         )}
       </div>

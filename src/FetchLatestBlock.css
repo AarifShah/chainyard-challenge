@@ -1,0 +1,14 @@
+.container .row > [class^="col"]
+{
+padding-top: 50 rem;
+padding-bottom: 50 rem;
+background-color: palevioletred;
+border:1px solid black;
+color:beige
+
+
+}
+.container .row{
+
+    margin-bottom: 0rem
+}

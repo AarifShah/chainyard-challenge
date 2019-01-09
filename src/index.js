@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import NavbarA from './Components/Navbar'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import FetchLatestBlock from './Components/FetchLatestBlock';
 import FetchSingleBlock from './Components/FetchSingleBlock';
@@ -12,23 +14,14 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = (
     <Router>
-      <div>
-      <ul>
-        <li>
-          <Link to="/FetchLatestBlock">View Latest Block</Link>
-        </li>
-        <li>
-          <Link to="/FetchSingleBlock">View Single Block</Link>
-        </li>
-        <li>
-          <Link to="/FetchSingleTranblock">View Single Transaction On Block</Link>
-        </li>
-      </ul>
+       <div>
+        <NavbarA></NavbarA>
+      
         <Route exact  path="/FetchLatestBlock" component={FetchLatestBlock} />
         <Route exact  path="/FetchSingleBlock" component={FetchSingleBlock} />
         <Route exact  path="/FetchSingleTranblock" component={FetchSingleTranblock} />
       </div>
-    </Router>
+          </Router>
 )
 ReactDOM.render(routing, document.getElementById('root'));
 
